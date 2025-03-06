@@ -33,11 +33,13 @@ app.engine('liquid', engine.express());
 // Let op: de browser kan deze bestanden niet rechtstreeks laden (zoals voorheen met HTML bestanden)
 app.set('views', './views')
 
+
+
 // Maak een GET route voor de index (meestal doe je dit in de root, als /)
 app.get('/', async function (request, response) {
-   // Render index.liquid uit de Views map
-   // Geef hier eventueel data aan mee
-   response.render('index.liquid')
+  const stekjesResponse = await fetch('https://fdnd-agency.directus.app/items/bib_stekjes/?fields=naam,foto')  
+  const stekjesResponseJSON = await stekjesResponse.json()
+  response.render('stekjes.liquid', {stekjes: stekjesResponseJSON.data})
 })
 
 // Maak een POST route voor de index; hiermee kun je bijvoorbeeld formulieren afvangen
