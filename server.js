@@ -36,16 +36,25 @@ app.set('views', './views')
 
 
 // Maak een GET route voor de index (meestal doe je dit in de root, als /)
-app.get('/', async function (request, response) {
-  const stekjesResponse = await fetch('https://fdnd-agency.directus.app/items/bib_stekjes/?fields=naam,foto')  
+app.get('/stekjes', async function (request, response) {
+  const stekjesResponse = await fetch('https://fdnd-agency.directus.app/items/bib_stekjes/?fields=id,naam,foto')  
   const stekjesResponseJSON = await stekjesResponse.json()
   response.render('stekjes.liquid', {stekjes: stekjesResponseJSON.data})
 })
 
-app.get('/stekje', async function (request, response) {
-  const stekjesResponse = await fetch('https://fdnd-agency.directus.app/items/bib_stekjes')  
-  const stekjesResponseJSON = await stekjesResponse.json()
-  response.render('stekje.liquid', {stekjes: stekjesResponseJSON.data})
+app.get('/stekje/:id', async function (request, response) {
+  const stekje = request.params.id
+
+  const stekjeResponse = await fetch(`https://fdnd-agency.directus.app/items/bib_stekjes/?filter={"id":"${stekje}"}`)  
+  const stekjeResponseJSON = await stekjeResponse.json()  
+  console.log(stekjeResponseJSON)
+
+  response.render('stekje.liquid', {stekje: stekjeResponseJSON.data[0]})
+})
+
+app.use((request, response, next) => {
+  // res.status(404).send("Oops, this page does not exist :(")
+  response.render('404.liquid');
 })
 
 // Maak een POST route voor de index; hiermee kun je bijvoorbeeld formulieren afvangen

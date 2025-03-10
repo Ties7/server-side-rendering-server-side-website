@@ -32,10 +32,13 @@
         <article>
             <img src="{{ stekje.foto }}" alt="">
             <h3>{{ stekje.naam }}</h3>
+            <a href="stekje/{{ stekje.id }}">bekijken</a>
         </article>
         
     {% endfor %}
 
 </main>
+
+<a href="/stekjes/stekje">volgende pagina</a>
 
 {% render 'partials/foot.liquid' %}
