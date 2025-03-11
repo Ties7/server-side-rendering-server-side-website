@@ -4,33 +4,30 @@
     <img src="" alt="">
     <nav>
         <img src="" alt="">
-        <details>
+        {% comment %} <details>
             <summary>Projecten</summary>
             <a href="">Stekjes</a>
             <a href="">Zaden</a>
             <a href="">Geveltuin</a>
             <a href="">Groenebieb</a>
-        </details>
+        </details> {% endcomment %}
+        <a href="">Stekjes</a>
+        <a href="">Zaden</a>
+        <a href="">Geveltuin</a>
         <a href="">Agenda</a>
         <a href="">Partners</a>
-        <a href="">Over</a>
         <a href="">Contact</a>
     </nav>
 
     <h1>Stekjes</h1>
-
-    <article>
-        <p>In de Bieb in Bloei Hoek van de OBA Linnaeus vind je een kleurrijke stekjeskast gemaakt door kinderen uit de buurt bij de OBA Maakplaats. Neem een of meerdere stekjes van thuis mee om deze te ruilen met stekjes die andere buurtbewoners in de kast hebben gezet. Dit kan in een potje met water of aarde. Onder de kast zetten wij vaak wat potjes met aarde neer om het plantje meteen in aarde te zetten als het al wortel heeft geschoten. In de koude maanden zullen er minder stekjes met kleinere worteltjes in de kast staan, de plantjes zijn dan in winterslaap. De stekjeskast komt echt tot leven in de lente en zomer:</p>
-    </article>
 </section>
 
 <main>
-    <h2>Vind jouw favoriet in onze geliefde collectie</h2>
-    
+
     {% for stekje in stekjes %}
         
         <article>
-            <img src="{{ stekje.foto }}" alt="">
+            <img src="../public/assets/test.svg" alt="">
             <h3>{{ stekje.naam }}</h3>
             <a href="stekje/{{ stekje.id }}">bekijken</a>
         </article>
