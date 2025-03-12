@@ -23,6 +23,7 @@ Ik heb de stekjes pagina en de detailpagina daarvan gemaakt.
 ## Gebruik
 ![image](https://github.com/user-attachments/assets/b1990399-41a9-40b3-8d07-38ac27151950)
 ![image](https://github.com/user-attachments/assets/fd37967b-cc3e-4874-b07e-7b5d7d6e4385)
+Op de stekjes pagina is op de top een navigatiebalk waar je kan kiezen tussen de verschillende pagina's. Onder de navigatiebalk staan alle stekjes die getoond worden als kaartjes met een foto en de naam van het stekje. Helemaal onder de pagina staat de footer met adres, contact etc. Die footer is te zien op alle pagina's aan de onderkant. Als je op een stekje klikt kom je uit bij de detailpagina van dat stekje. Daar is algemene informatie te vinden op de linkerkant en op de rechterkant staan verschillende specificaties van dat stekje als de land van herkomst, temperatuur of die giftig is etc. Die specificaties zijn uitklapbaar als je erop klikt, dan komt de informatie tevoorschijn. 
 
 
 <!--Bij Gebruik staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
