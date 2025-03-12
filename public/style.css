@@ -19,11 +19,28 @@ section {
     }
 }
 
-article {
-    padding: 2em;
+main {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
 
     img {
+        position: relative;
         width: 100%;
         border-radius: 1rem;
+        display: block;
+    }
+
+    h3 {
+        position: absolute;
+        top: 1.3rem;
+        left: 1rem;
+        width: 100%;
+        color: white;
+    }
+
+    article {
+        position: relative;
+        padding: 0;
+        margin-top: 1.3rem;
     }
 }

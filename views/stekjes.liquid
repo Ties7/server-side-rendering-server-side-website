@@ -19,18 +19,20 @@
     <h1>Stekjes</h1>
 </section>
 
+
+<main>
 {% for stekje in stekjes %}
+    <article>
+        <a href="stekje/{{ stekje.id }}">
+        
+        <img class="stekjes-img" src="https://fdnd-agency.directus.app/assets/{{ stekje.foto }}" alt="">
+        <h3>{{ stekje.naam }}</h3>
 
-<article>
-    <a href="stekje/{{ stekje.id }}">
-    
-    <img class="stekjes-img" src="https://fdnd-agency.directus.app/assets/{{ stekje.foto }}" alt="">
-    <h3>{{ stekje.naam }}</h3>
-
-    </a>
-</article>
-
+        </a>
+    </article>
 {% endfor %}
+</main>
+
 
 <a href="/stekjes/stekje">volgende pagina</a>
 
