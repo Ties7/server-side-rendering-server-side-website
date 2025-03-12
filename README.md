@@ -13,7 +13,8 @@
 
 ## Beschrijving
 Ik heb de stekjes pagina en de detailpagina daarvan gemaakt.
-![image](https://github.com/user-attachments/assets/d508f96d-1d50-4a94-b12d-74d1c2e85c92)
+![image](https://github.com/user-attachments/assets/face8893-a2dc-409d-bc3a-37401766c6a8)
+
 
 <!-- In de Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
 <!-- Voeg een mooie poster visual toe 📸 -->
