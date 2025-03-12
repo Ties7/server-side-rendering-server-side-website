@@ -1,40 +1,36 @@
 {% render 'partials/head.liquid', title: 'Stekjes' %}
 
 <section>
-    <img src="" alt="">
-    <nav>
-        <img src="" alt="">
-        {% comment %} <details>
-            <summary>Projecten</summary>
-            <a href="">Stekjes</a>
-            <a href="">Zaden</a>
-            <a href="">Geveltuin</a>
-            <a href="">Groenebieb</a>
-        </details> {% endcomment %}
-        <a href="">Stekjes</a>
-        <a href="">Zaden</a>
-        <a href="">Geveltuin</a>
-        <a href="">Agenda</a>
-        <a href="">Partners</a>
-        <a href="">Contact</a>
-    </nav>
+
+    <header>
+        <img class="logo" src="../assets/biebinbloei-logo1.svg" alt="">
+        {% comment %} <nav>
+            <ul>
+                <li><a href="#">stekjes</a></li>
+                <li><a href="#">zaden</a></li>
+                <li><a href="#">geveltuin</a></li>
+                <li><a href="#">agenda</a></li>
+                <li><a href="#">partners</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav> {% endcomment %}
+    </header>
 
     <h1>Stekjes</h1>
 </section>
 
-<main>
+{% for stekje in stekjes %}
 
-    {% for stekje in stekjes %}
-        
-        <article>
-            <img src="../public/assets/test.svg" alt="">
-            <h3>{{ stekje.naam }}</h3>
-            <a href="stekje/{{ stekje.id }}">bekijken</a>
-        </article>
-        
-    {% endfor %}
+<article>
+    <a href="stekje/{{ stekje.id }}">
+    
+    <img class="stekjes-img" src="https://fdnd-agency.directus.app/assets/{{ stekje.foto }}" alt="">
+    <h3>{{ stekje.naam }}</h3>
 
-</main>
+    </a>
+</article>
+
+{% endfor %}
 
 <a href="/stekjes/stekje">volgende pagina</a>
 
