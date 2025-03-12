@@ -21,6 +21,10 @@ Ik heb de stekjes pagina en de detailpagina daarvan gemaakt.
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Gebruik
+![image](https://github.com/user-attachments/assets/b1990399-41a9-40b3-8d07-38ac27151950)
+![image](https://github.com/user-attachments/assets/fd37967b-cc3e-4874-b07e-7b5d7d6e4385)
+
+
 <!--Bij Gebruik staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 
 ## Kenmerken
