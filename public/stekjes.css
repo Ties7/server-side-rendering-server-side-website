@@ -1,4 +1,4 @@
-section {
+.head {
     background-image: url(../assets/test.svg);
     height: 35rem;
     width: 100vw;
@@ -19,7 +19,7 @@ section {
     }
 }
 
-main {
+.stekjes {
     padding-left: 1.3rem;
     padding-right: 1.3rem;
 
@@ -42,5 +42,30 @@ main {
         position: relative;
         padding: 0;
         margin-top: 1.3rem;
+    }
+}
+
+/* stekje detailpagina */
+.head2 {
+    background-image: url(../assets/test.svg);
+    height: 10rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    
+
+    img {
+        width: 6rem;
+    }
+}
+
+.stekje {
+    /* width: 100vw; */
+    background-color: #4e7141;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+
+    article {
+        background-color: #f9e9c2;
     }
 }

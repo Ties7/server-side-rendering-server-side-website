@@ -1,5 +1,43 @@
 {% render 'partials/head.liquid', title: 'Stekjes' %}
 
-{{ stekje.naam }}
+<section class="head2">
+    <header>
+        <img class="logo" src="../assets/biebinbloei-logo1.svg" alt="">
+    </header>
+</section>
+
+<main class="stekje">
+    <article>
+        <img src="" alt="">
+        <h2>Beschrijving</h2>
+        <p>{{ stekje.beschrijving }}</p>
+    
+        <details>
+            <summary>LANDHERKOMST</summary>
+            <p>{{ stekje.land_van_herkomst }}</p>
+        </details>
+    
+        <details>
+            <summary>LANDHERKOMST</summary>
+            <p>{{ stekje.land_van_herkomst }}</p>
+        </details>
+    
+        <details>
+            <summary>LANDHERKOMST</summary>
+            <p>{{ stekje.land_van_herkomst }}</p>
+        </details>
+    
+        <details>
+            <summary>LANDHERKOMST</summary>
+            <p>{{ stekje.land_van_herkomst }}</p>
+        </details>
+    
+        <details>
+            <summary>LANDHERKOMST</summary>
+            <p>{{ stekje.land_van_herkomst }}</p>
+        </details>
+    </article>
+</main>
+
 
 {% render 'partials/foot.liquid' %}

@@ -1,6 +1,6 @@
 {% render 'partials/head.liquid', title: 'Stekjes' %}
 
-<section>
+<section class="head">
 
     <header>
         <img class="logo" src="../assets/biebinbloei-logo1.svg" alt="">
@@ -20,7 +20,7 @@
 </section>
 
 
-<main>
+<main class="stekjes">
 {% for stekje in stekjes %}
     <article>
         <a href="stekje/{{ stekje.id }}">
@@ -32,8 +32,5 @@
     </article>
 {% endfor %}
 </main>
-
-
-<a href="/stekjes/stekje">volgende pagina</a>
 
 {% render 'partials/foot.liquid' %}
